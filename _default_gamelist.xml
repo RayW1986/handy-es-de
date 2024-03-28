@@ -1,0 +1,192 @@
+<theme> 
+	
+	<include>./variables.xml</include>
+	<include>./colors.xml</include>
+	<include>./fonts.xml</include>
+	<include>./navigationsounds.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+	
+	<view name="gamelist">
+		<carousel name="gameCarousel">
+			<pos>-0.3 -0.3</pos>
+			<size>0.1 0.1</size>
+			<type>horizontal</type>
+			<horizontalOffset>0</horizontalOffset>
+			<verticalOffset>0</verticalOffset>
+			<defaultImage>${rootpath}/_inc/systems/logos/${system.theme}.svg</defaultImage>
+			<maxItemCount>1</maxItemCount>
+			<itemSize>0.25 0.25</itemSize>
+			<itemScale>1</itemScale>
+			<imageInterpolation>linear</imageInterpolation>
+			<itemVerticalAlignment>center</itemVerticalAlignment>
+			<color>00000000</color>
+			<textColor>BBBBBB</textColor>
+			<imageFit>cover</imageFit>
+			<fontSize>0.03</fontSize>
+			<letterCase>uppercase</letterCase>
+			<lineSpacing>1.1</lineSpacing>
+			<selectedItemMargins>.06 .06</selectedItemMargins>
+			<unfocusedItemOpacity>1</unfocusedItemOpacity>
+			<unfocusedItemDimming>.8</unfocusedItemDimming>
+			<fastScrolling>true</fastScrolling>
+			<itemTransitions>slide</itemTransitions>
+			<imageCornerRadius>0</imageCornerRadius>
+			<zIndex>0</zIndex>
+		</carousel>
+		
+		<image name="imageBackground">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/white.png</path>
+			<color>${backgroundColor}</color>
+			<zIndex>0</zIndex>
+		</image>
+		<video name="videoHero">
+			<pos>0 0</pos>
+			<cropSize>1.1 .65</cropSize>
+			<origin>0 0</origin>
+			<interpolation>linear</interpolation>
+			<gameselectorEntry>0</gameselectorEntry>
+			<scanlines>true</scanlines>
+			<videoCornerRadius>.01</videoCornerRadius>
+			<iterationCount>1</iterationCount>
+			<imageType>screenshot</imageType>
+			<onIterationsDone>image</onIterationsDone>
+			<delay>3</delay>
+			<zIndex>1</zIndex>
+		</video>
+		<image name="imageBackgroundFade">
+			<pos>0 0</pos>
+			<size>1 .65</size>
+			<path>${rootpath}/_inc/images/fade.png</path>
+			<color>000000</color>
+			<zIndex>2</zIndex>
+		</image>
+		<image name="imageLogo">
+			<pos>.25 .25</pos>
+			<maxSize>.4 .35</maxSize>
+			<origin>.5 .5</origin>
+			<imageType>marquee</imageType>
+			<zIndex>4</zIndex>
+		</image>
+		
+		<image name="imageInfoHeader">
+			<pos>.025 .55</pos>
+			<size>.25 .1</size>
+			<path>${rootpath}/_inc/images/white.png</path>
+			<color>${infoColor}</color>
+			<zIndex>3</zIndex>
+		</image>
+		<image name="imageInfo">
+			<pos>.025 .65</pos>
+			<size>.25 .35</size>
+			<path>${rootpath}/_inc/images/white.png</path>
+			<color>${infoColor}</color>
+			<zIndex>3</zIndex>
+		</image>
+		
+		<image name="imageGenreIcon">
+			<pos>.025 .55</pos>
+			<maxSize>.1 .1</maxSize>
+			<path>${rootpath}/_inc/images/genre_icon.png</path>
+			<zIndex>5</zIndex>
+		</image>
+		<text name="metaGenre">
+			<pos>.07 .55</pos>
+			<size>.25 .1</size>
+			<defaultValue>Unknown</defaultValue>
+			<metadata>genre</metadata>
+			<fontSize>0.06</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>${fontHelp}</fontPath>
+			<container>false</container>
+		</text>
+		
+		<image name="imageReleaseIcon">
+			<tile>false</tile>
+			<pos>.025 .65</pos>
+			<maxSize>.1 .1</maxSize>
+			<origin>0 0</origin>
+			<path>${rootpath}/_inc/images/year_icon.png</path>
+			<interpolation>linear</interpolation>
+		</image>
+		<datetime name="metaRelease">
+			<metadata>releasedate</metadata>
+			<pos>.07 .65</pos>
+			<size>.25 .1</size>
+			<fontSize>0.06</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>${fontHelp}</fontPath>
+			<defaultValue>Unknown</defaultValue>
+			<format>%Y</format>
+		</datetime>	
+		
+		<image name="imagePlayersIcon">
+			<tile>false</tile>
+			<pos>.025 .75</pos>
+			<maxSize>.1 .1</maxSize>
+			<origin>0 0</origin>
+			<path>${rootpath}/_inc/images/players_icon.png</path>
+			<interpolation>linear</interpolation>
+		</image>
+		<text name="metaPlayers">
+			<pos>.07 .75</pos>
+			<size>.25 .1</size>
+			<metadata>players</metadata>
+			<fontSize>0.06</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>${fontHelp}</fontPath>
+			<defaultValue>Unknown</defaultValue>
+			<container>false</container>
+		</text>
+		
+		<image name="imageSystemIcon">
+			<pos>.025 .85</pos>
+			<maxSize>.1 .1</maxSize>
+			<path>${rootpath}/_inc/images/genre_icon.png</path>
+			<zIndex>5</zIndex>
+		</image>
+		<text name="metaSystem">
+			<pos>.07 .85</pos>
+			<size>.2 .1</size>
+			<metadata>sourceSystemName</metadata>
+			<letterCase>uppercase</letterCase>
+			<fontSize>0.06</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>center</verticalAlignment>
+			<fontPath>${fontHelp}</fontPath>
+			<defaultValue>Unknown</defaultValue>
+			<container>false</container>
+		</text>
+		
+		<rating name="metaRating">
+			<pos>.28 .56</pos>
+			<size>.2 .07</size>
+			<filledPath>${rootpath}/_inc/images/star_filled.svg</filledPath>
+			<unfilledPath>${rootpath}/_inc/images/star_unfilled.svg</unfilledPath>
+			<color>FFFFFF</color>
+			<zIndex>65</zIndex>
+		</rating>
+		
+		<text name="metaDescription">
+			<pos>.2875 .67</pos>
+			<size>.7 .269</size>
+			<metadata>description</metadata>
+			<fontSize>0.057</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>${mainTextColor}</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontHelp}</fontPath>
+			<container>true</container>
+		</text>
+		
+	</view>
+</theme> 

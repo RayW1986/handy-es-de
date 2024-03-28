@@ -1,0 +1,32 @@
+<!--
+	Variant - Immersive
+-->
+
+<theme> 
+	<include>./variables.xml</include>
+	<include>./colors.xml</include>
+	<include>./fonts.xml</include>
+	
+	<view name="system, gamelist">
+		<image name="imageHelpFooter">
+			<pos>0 .95</pos>
+			<size>1 .05</size>
+			<path>${rootpath}/_inc/images/white.png</path>
+			<color>000000</color>
+			<stationary>always</stationary>
+			<zIndex>49</zIndex>
+		</image>
+		<helpsystem name="help">
+			<pos>0.99 0.955</pos>
+			<origin>1 0</origin>
+			<textColor>FFFFFF</textColor>
+			<iconColor>FFFFFF</iconColor>
+			<fontSize>0.04</fontSize>
+			<fontPath>${fontHelp}</fontPath>
+			<iconTextSpacing>0.003</iconTextSpacing>
+			<originDimmed>0.5 0</originDimmed>
+			<posDimmed>0.5 0.96</posDimmed>
+			<opacity>.7</opacity>
+		</helpsystem>
+	</view>
+</theme>

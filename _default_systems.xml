@@ -1,0 +1,81 @@
+<theme> 
+	
+	<include>./variables.xml</include>
+	<include>./colors.xml</include>
+	<include>./fonts.xml</include>
+	<include>./navigationsounds.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+	<include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
+	
+	<view name="system">
+		<carousel name="systemCarousel">
+			<pos>-0.3 -0.3</pos>
+			<size>0.1 0.1</size>
+			<type>horizontal</type>
+			<horizontalOffset>0</horizontalOffset>
+			<verticalOffset>0</verticalOffset>
+			<defaultImage>${rootpath}/_inc/systems/logos/${system.theme}.svg</defaultImage>
+			<maxItemCount>1</maxItemCount>
+			<itemSize>0.25 0.25</itemSize>
+			<itemScale>1</itemScale>
+			<imageInterpolation>linear</imageInterpolation>
+			<itemVerticalAlignment>center</itemVerticalAlignment>
+			<color>00000000</color>
+			<textColor>BBBBBB</textColor>
+			<imageFit>cover</imageFit>
+			<fontSize>0.03</fontSize>
+			<letterCase>uppercase</letterCase>
+			<lineSpacing>1.1</lineSpacing>
+			<selectedItemMargins>.06 .06</selectedItemMargins>
+			<unfocusedItemOpacity>1</unfocusedItemOpacity>
+			<unfocusedItemDimming>.8</unfocusedItemDimming>
+			<fastScrolling>true</fastScrolling>
+			<itemTransitions>slide</itemTransitions>
+			<imageCornerRadius>0</imageCornerRadius>
+			<zIndex>0</zIndex>
+		</carousel>
+		
+		<image name="imageBackground">
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>${rootpath}/_inc/images/white.png</path>
+			<color>${backgroundColor}</color>
+			<zIndex>0</zIndex>
+		</image>
+		<image name="imageHero">
+			<pos>0 .175</pos>
+			<cropSize>1 .65</cropSize>
+			<path>${rootpath}/_inc/systems/artwork/${system.theme}.jpg</path>
+			<zIndex>1</zIndex>
+		</image>
+		<image name="imageBackgroundFade">
+			<pos>0 .175</pos>
+			<size>1 .65</size>
+			<path>${rootpath}/_inc/images/fade.png</path>
+			<color>000000</color>
+			<zIndex>2</zIndex>
+		</image>
+		
+		<image name="imageLogo">
+			<pos>.25 .5</pos>
+			<maxSize>.4 .35</maxSize>
+			<origin>.5 .5</origin>
+			<path>${rootpath}/_inc/systems/logos/${system.theme}.svg</path>
+			<zIndex>4</zIndex>
+		</image>
+		<text name="gameCount">
+			<pos>.05 .05</pos>
+			<size>.9 .18</size>
+			<systemdata>gamecount</systemdata>
+			<fontSize>0.06</fontSize>
+			<lineSpacing>1.1</lineSpacing>
+			<color>FFFFFF</color>
+			<verticalAlignment>top</verticalAlignment>
+			<fontPath>${fontHelp}</fontPath>
+			<letterCase>uppercase</letterCase>
+			<stationary>withinView</stationary>
+		</text>
+		
+		
+	</view>
+</theme>

@@ -1,0 +1,20 @@
+<theme>
+	<colorScheme name="default">
+		<variables>
+			<backgroundColor>0C131B</backgroundColor>
+			<enterColor>53AB3D</enterColor>
+			<infoColor>232730</infoColor>
+			
+			<selectorBackgroundColor>9590AF</selectorBackgroundColor>
+			<selectorColor>FFFFFD</selectorColor>
+			<selectorColorEnd>FFFFFD</selectorColorEnd>
+			<selectorTextColor>746E97</selectorTextColor>
+			<showcaseTextColor>FFFFFF</showcaseTextColor>
+			<showcaseSepColor>BDC1D1</showcaseSepColor>
+			<mainTextColor>FFFFFF</mainTextColor>
+			<systemTextMetaColor>C0C0C0</systemTextMetaColor>
+			<systemDescriptionBackground>32393F</systemDescriptionBackground>
+		</variables>
+	</colorScheme>
+	
+</theme>

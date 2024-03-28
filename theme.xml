@@ -1,0 +1,9 @@
+<theme>
+	
+	<variant name="Default">
+		<include>./_default_systems.xml</include>
+		<include>./_default_gamelist.xml</include>
+		<include>./_default_help.xml</include>
+	</variant>
+	
+</theme>
